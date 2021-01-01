@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+.hero{
+    background-color: black;
+    background-image: url('./background.jpg');
+    background-size: 180%;
+    background-position-x: 60%;
+    height: 100vh;
+    color: black;
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    overflow: hidden;
+
+    
+}
+.heroVideo{
+    margin-top: 0%;
+    justify-self: flex-end;
+    height: 100%;
+}
+.box{
+    font-size: 1rem;
+    height: 50vh;
+    width: 60vw;
+    color:rgb(174,165,131);
+    border: solid rgb(174,165,131); 
+    z-index: 10;
+    position: absolute;
+    top: 25vh;
+    left: 20vw;
+    background-color:  rgba(33, 36, 43, 0.4);
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-flow: column wrap;
+    flex-shrink: 1;
+
+}
+.logo{
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+
+}
+.statement{
+    font-size: 1.2rem;
+    padding:0;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+.buttonHero{
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+    color:rgb(174,165,131);
+    font-family: 'Rubik', sans-serif;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+        transform: scale(1);
+    
+		
+	}
+
+	70% {
+		transform: scale(1.1);
+        color:wheat;
+	}
+
+	100% {
+		transform: scale(1);
+	
+	}
+}

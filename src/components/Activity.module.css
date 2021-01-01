@@ -1,0 +1,45 @@
+.content{
+    height: 87%;
+    background-color: transparent;
+    overflow: hidden;
+}
+.slide{
+    position: relative;
+    height: 100%;
+    flex-flow: column wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    display:flex;
+}
+.hidden {
+    position:relative;
+    height: 100%;
+    flex-flow: column wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    display:none; 
+}
+
+.image{
+    position: absolute;
+    height: 100%;
+}
+.text{
+    position:relative;
+    color: white;
+    top: 12;
+    z-index: 2;
+    background-color: rgba(100, 108, 116, 0.5);
+    padding:20px;
+    border: solid wheat;
+}
+.title{
+    position:relative;
+    color: black;
+    top: 12;
+    z-index: 2;
+    padding:20px;
+    color:wheat;
+    font-size: 2rem;
+    text-shadow: 1 1 1 1 black;
+}

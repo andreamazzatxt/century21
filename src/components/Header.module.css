@@ -1,0 +1,17 @@
+.header{
+    height: 20vh;
+    position:fixed;
+    width: 100vw;
+    background-color: rgba(33, 36, 43, 0.5);
+    color: black ;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
+
+}
+.logo{
+  margin-left: 1rem;  
+  height: 4rem;
+}
+

@@ -1,0 +1,35 @@
+.footer{
+    background-color: transparent;
+    height: 100vh;
+    color: black;
+
+}
+.social{
+   background-color: transparent;
+   font-size: 4vh; 
+   height:10vh;
+   color: rgb(174,165,131);
+   margin-bottom: 0;
+   display: flex;
+   flex-flow: row wrap;
+   align-content: center;
+   justify-content: center;
+   
+}
+.content{
+    height: 90vh;
+    background-color:transparent;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+
+}
+#socialIcon{
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor:pointer;
+}
+#socialIcon:hover{
+    color:wheat;
+}

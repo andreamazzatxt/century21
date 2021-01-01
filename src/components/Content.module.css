@@ -1,0 +1,37 @@
+.contentBox{
+   height: 80%;
+   width: 80%;
+}
+.menu{
+    height: 13%;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+.button{
+    color:wheat;
+    background-color: trnsparent;
+    height: 100%;
+    width: 33%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    cursor:pointer;
+
+}
+.button:hover{
+    background-color: rgba(33, 36, 43, 0.5) ;
+    border-top-left-radius: 50px;
+}
+.content{
+    height: 87%;
+    background-color: yellowgreen;
+}
+#about_content{
+    display:none;
+}
+#contact_content{
+    display:none;
+}
