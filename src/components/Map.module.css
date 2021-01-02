@@ -1,12 +1,12 @@
-.content{
+.container{
     height: 87%;
-    background-color: yellowgreen;
+    background-color: transparent;
     display: flex;
     align-content: center;
     justify-content: center;
-
-
+    overflow: hidden;
 }
+
 #map {
     position: relative;
     height: 60vh;
@@ -15,4 +15,12 @@
   }
   .popup{
       color:wheat
+  }
+
+  #hidden{
+      display: none;
+  }
+  #pic{
+    
+    object-fit:fill;
   }

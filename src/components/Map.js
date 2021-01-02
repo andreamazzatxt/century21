@@ -1,9 +1,11 @@
 import { useEffect,useRef } from 'react';
 import mapboxgl from 'mapbox-gl';
 import style from './Map.module.css'
-mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_API_KEY;
+const accessToken= process.env.REACT_APP_MAPBOX_API_KEY;
+mapboxgl.accessToken = accessToken;
 
 export function Map(props){
+    const accessToken= process.env.REACT_APP_MAPBOX_API_KEY;
     const mapContainerRef = useRef(null);
 
     useEffect(() => {
@@ -25,7 +27,9 @@ export function Map(props){
   
     return (
     <div className={style.container}>
- <div className="map-container" ref={mapContainerRef} id={style.map}/> 
+
+     <div className="map-container" ref={mapContainerRef} id={accessToken ? style.map : style.hidden}/> 
+     <img alt = "Map" src="./mapAltern.png" id = {accessToken ? style.hidden : style.pic}></img>
     </div>
     
     );
