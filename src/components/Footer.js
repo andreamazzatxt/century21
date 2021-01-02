@@ -8,9 +8,9 @@ export function Footer(props){
             <Content />
             </div>
             <div className={style.social}>
-            <i class="fab fa-facebook-square" id={style.socialIcon}></i>
-            <i class="fab fa-instagram" id={style.socialIcon}></i>
-            <i class="fab fa-tiktok"id={style.socialIcon} ></i>
+            <i className="fab fa-facebook-square" id={style.socialIcon}></i>
+            <i className="fab fa-instagram" id={style.socialIcon}></i>
+            <i className="fab fa-tiktok"id={style.socialIcon} ></i>
             </div>
         </div>
     )

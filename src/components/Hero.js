@@ -4,7 +4,7 @@ export function Hero(props){
 
     return (
         <div className={style.hero}>
-        <video playsInline autoPlay loop muted control className={style.heroVideo}>
+        <video playsInline autoPlay loop muted control = 'false' className={style.heroVideo}>
             <source src ="background.mp4" type="video/mp4"></source>
         </video>
         <div className={style.box}>

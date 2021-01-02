@@ -6,9 +6,6 @@ import slideArray from './slideObject'
 export function Activity(props){
 const [count,setCount] =useState(0);
 const {length} = slideArray;
-
-console.log(count)
-
 const handleClickNext = () =>{
     setCount(count === length-1 ? 0 : count +1)
 }
@@ -29,8 +26,8 @@ const handleClickBack = () =>{
                         <img alt={element.title}src={element.img} className={style.image}></img> 
                         <p className={style.text}>{element.desc}</p>
                         <div className={style.directions}>
-                        <i class="fas fa-angle-double-left"id={style.navIcon} onClick={handleClickBack}  ></i>
-                        <i class="fas fa-angle-double-right" id={style.navIcon} onClick={handleClickNext}></i>
+                        <i className="fas fa-angle-double-left"id={style.navIcon} onClick={handleClickBack}  ></i>
+                        <i className="fas fa-angle-double-right" id={style.navIcon} onClick={handleClickNext}></i>
                         </div>
                         </div>
                     )

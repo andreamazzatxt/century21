@@ -1,4 +1,18 @@
 .content{
     height: 87%;
     background-color: yellowgreen;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+
 }
+#map {
+    position: relative;
+    height: 60vh;
+    width: 100%;
+
+  }
+  .popup{
+      color:wheat
+  }

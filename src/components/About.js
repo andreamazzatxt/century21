@@ -15,13 +15,13 @@ const  handleBack = () =>{
             {
                 courses.map((course,index) =>{
                     return (
-                        <div className={count === index ? style.container : style.hidden}>
+                        <div key ={course.title}className={count === index ? style.container : style.hidden}>
                             <h2 className={style.title}>{course.title}</h2>
                             <p className={style.desc}>{course.desc}</p>
                             <p className={style.time}>{course.time}</p>
                             <div>
-                            <i class="fas fa-angle-double-left"id={style.navIcon} onClick={handleBack}  ></i>
-                            <i class="fas fa-angle-double-right" id={style.navIcon} onClick={handleNext}></i>
+                            <i className="fas fa-angle-double-left"id={style.navIcon} onClick={handleBack}  ></i>
+                            <i className="fas fa-angle-double-right" id={style.navIcon} onClick={handleNext}></i>
                             </div>
                         </div>
                     )
