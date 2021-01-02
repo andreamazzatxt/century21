@@ -1,37 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
 .content{
     height: 87%;
     background-color: transparent;
     overflow: hidden;
+    border: solid wheat
 }
 .slide{
     position: relative;
     height: 100%;
     flex-flow: column wrap;
-    align-content: space-around;
-    justify-content: space-around;
+    align-content:space-around;
+    justify-content:flex-end;
     display:flex;
 }
 .hidden {
     position:relative;
     height: 100%;
     flex-flow: column wrap;
-    align-content: space-around;
-    justify-content: space-around;
+    align-content: flex-end;
+    justify-content: flex-end;
     display:none; 
 }
 
 .image{
     position: absolute;
     height: 100%;
+    width: 100%;
+    object-fit:cover;
 }
 .text{
     position:relative;
-    color: white;
+    color: wheat;
     top: 12;
     z-index: 2;
-    background-color: rgba(100, 108, 116, 0.5);
     padding:20px;
-    border: solid wheat;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;    
 }
 .title{
     position:relative;
@@ -42,4 +47,27 @@
     color:wheat;
     font-size: 2rem;
     text-shadow: 1 1 1 1 black;
+}
+.directions{
+    position:relative;
+    color: white;
+    top: 12;
+    z-index: 2;
+    justify-self: flex-end;
+    
+
+}
+#navIcon{
+    color:wheat;  
+    font-size: 2rem;
+    opacity: 0.5;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    cursor:pointer;
+    transition: 0.2s;
+}
+#navIcon:hover{
+    color: white;
+    transform: translateY(-10%);
 }

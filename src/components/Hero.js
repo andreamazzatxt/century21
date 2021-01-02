@@ -1,4 +1,4 @@
-import { Button } from './Button'
+
 import style from './Hero.module.css'
 export function Hero(props){
 

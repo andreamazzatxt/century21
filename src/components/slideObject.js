@@ -1,17 +1,18 @@
-export default [
+const slideObject = [
     {
-        title: 'Prova',
-        desc: 'ciao...ciao...ciao',
-        img: 'https://picsum.photos/600/300'
+        title: 'rope',
+        desc: 'Heavy Rope',
+        img: './rope.jpg'
     },
      {
-        title: 'Prova2',
-        desc: 'ciao...ciao...ciao',
-        img: 'https://picsum.photos/600/300'
+        title: 'jump',
+        desc: 'Box Jump',
+        img: './jump.jpg'
     } ,
     {
-        title: 'Prova3',
-        desc: 'ciao...ciao...ciao',
-        img: 'https://picsum.photos/600/300'
+        title: 'personal',
+        desc: 'Personal Trainer',
+        img: './body.jpg'
     }
 ]
+export default slideObject;

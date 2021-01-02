@@ -1,4 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
 .content{
     height: 87%;
-    background-color: yellowgreen;
+    background-color: transparent;
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+.hidden{
+    display:none;
+}
+.form{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+.text{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 40%;
+    border:none;
+    border:solid wheat;
+    background-color: transparent;
+    font-family: 'Rubik', sans-serif;
+    color:white;
+    outline: none;
+}
+.name,.email{
+
+    width: 50%;
+    border:none;
+    border-bottom:solid wheat;
+    background-color: transparent;
+    font-family: 'Rubik', sans-serif;
+    color:white;
+    outline:none
+
+}
+
+.button{
+    width: 5rem;
+    padding: 0.5rem;
+    align-self: center;
+    border:solid wheat;
+    background-color: transparent;
+    font-family: 'Rubik', sans-serif;
+    color:wheat;
+    outline: none;
+    cursor:pointer
+
+
+}
+.sent{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-content: space-around;
+
+}
+#icon{
+    font-size: 5rem;
+    color: wheat;
+    opacity: 0.9;
+
+}
+.confirm{
+    font-family: 'Rubik', sans-serif;
+    color:wheat;
 }
