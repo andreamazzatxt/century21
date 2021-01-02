@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
 .contentBox{
    height: 80%;
    width: 80%;
@@ -11,7 +13,7 @@
 }
 .button{
     color:wheat;
-    background-color: trnsparent;
+    background-color: transparent;
     height: 100%;
     width: 25%;
     display: flex;
@@ -19,6 +21,9 @@
     justify-content: center;
     align-content: center;
     cursor:pointer;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+
 
 }
 .button:hover{
