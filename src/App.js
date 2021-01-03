@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
-import { Footer } from './components/Footer';
 import { Hero } from './components/Hero';
+import { Footer } from './components/Footer';
+
 function App() {
   return (
     <div className="App">
-      <Hero description="Lorem...." />
-      <Footer />
+       <Hero />
+       <Footer />
+
     </div>
   );
 }
