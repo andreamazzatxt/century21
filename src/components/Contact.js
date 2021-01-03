@@ -6,6 +6,9 @@ export function Contact(props){
     const[email,setEmail] = useState('')
     const[text,setText] = useState('')
     const [sent,setSent] = useState(0);
+    const[focusText,setFocusText] = useState(false);
+    const[focusName,setFocusName] = useState(false);
+    const[focusEmail,setFocusEmail] = useState(false);
 
 
     async function  handleFetch(){
@@ -44,13 +47,25 @@ export function Contact(props){
        transform: `perspective(600px) rotateX(${sent === 0 ? -180 : 0}deg)`,
 
     })
+    const textSpring = useSpring({
+        color: focusText ? "white" : "lightgray" ,
+        fontSize : focusText ? "1rem": '0.9rem'
+       
+    })
+    const nameSpring = useSpring({
+        transform: focusName ? "translateY(50%)" : "translateY(1%)",
+    })
+    const emailSpring = useSpring({
+        transform: focusEmail ? "translateY(50%)" : "translateY(1%)",
+    })
+
   
     return (            
     <div id={style.contact_content} className={style.content} onSubmit={handleSubmit}>
         <form className={sent === 1 ? style.hidden : style.form}>
-            <input onChange = {handleChangeName}className={style.name} placeholder = "Name"type="text" required></input>
-            <input onChange = {handleEmailChange} className={style.email} placeholder="E-mail"type="email" required></input>
-            <textarea onChange ={handleTextChange} className={style.text}required placeholder="Tell us.."></textarea>
+            <animated.input style={nameSpring} onKeyUp={()=>setFocusName(false)} onKeyDown={()=>setFocusName(true)} onChange = {handleChangeName}className={style.name} placeholder = "Name"type="text" required></animated.input>
+            <animated.input style={emailSpring} onKeyUp={()=>setFocusEmail(false)} onKeyDown={()=>setFocusEmail(true)} onChange = {handleEmailChange} className={style.email} placeholder="E-mail"type="email" required></animated.input>
+            <animated.textarea style={textSpring} onKeyUp={()=>setFocusText(false)} onKeyDown={()=>setFocusText(true)} onChange ={handleTextChange} className={style.text}required placeholder="Tell us.."></animated.textarea>
             <button className={style.button}>Submit</button>
         </form>
         <animated.div style={spring}className={sent === 1 ? style.sent : style.hidden}>
